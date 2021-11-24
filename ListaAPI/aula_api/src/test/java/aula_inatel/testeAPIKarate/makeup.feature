@@ -1,7 +1,7 @@
 @makeup
 Feature: Executar testes funcionais na API Makeup 
 # (https://makeup-api.herokuapp.com/)
-
+ 
 Background: Executar antes de cada teste
     * def url_base = 'https://makeup-api.herokuapp.com/api/v1/'
 
