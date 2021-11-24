@@ -18,6 +18,7 @@ Além disso é preciso digitar :
 } no arquivo cypress.json.
 Ápós fazer isso é só usar o comando pra executar o projeto, usar o comando 'npx mochawesome-merge "cypress/reports/*json" > mochawesome.json' e 'npx marge mochawesome.json' 
 para poder visualizar o relatório html na pasta reports dentro de integration.
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 KARATE 
 
