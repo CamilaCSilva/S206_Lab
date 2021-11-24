@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: examples.S206TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 103.278 s <<< FAILURE! - in examples.S206TestRunner
+testParallel  Time elapsed: 102.666 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+http call failed after 163 milliseconds for url: https://makeup-api.herokuapp.com/api/v1/products.json?product_tags=Organic&product_type=lipstick1%#34
+src/test/java/aula_inatel/testeAPIKarate/makeup.feature:17
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Bobbie'
+  'Rosie'
+
+src/test/java/aula_inatel/testeAPIKarate/makeup.feature:47
+status code was: 422, expected: 201, response time in milliseconds: 1039, url: https://makeup-api.herokuapp.com/api/v1/products.json?product_tags=Natural&product_type=blush, response: 
+{"status":422,"error":"Unprocessable Entity"}
+src/test/java/aula_inatel/testeAPIKarate/makeup.feature:61 ==> expected: <0> but was: <3>
+	at examples.S206TestRunner.testParallel(S206TestRunner.java:16)
+

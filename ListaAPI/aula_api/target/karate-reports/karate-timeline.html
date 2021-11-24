@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[1:8]","start":1637763595064,"end":1637763613752,"title":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[1:8] 11:19:55.064-11:20:13.752 Verificar o retorno com sucesso da API \/v1\/products.json?product_tags=Organic&product_type=lipstick com dados válidos de requisição (request)"},{"id":2,"group":2,"content":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[2:14]","start":1637763595033,"end":1637763597863,"title":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[2:14] 11:19:55.033-11:19:57.863 Verificar o retorno com sucesso da API \/v1\/products.json?product_tags=Organic&product_type=lipstick com dados inválidos de requisição (request)","className":"failed"},{"id":3,"group":3,"content":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[3:20]","start":1637763595044,"end":1637763615492,"title":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[3:20] 11:19:55.044-11:20:15.492 Verificar o retorno com sucesso da API \/v1\/products?product_tags=Organic&product_type=lipstick com dados válidos de nome do produto e marca (request)"},{"id":4,"group":4,"content":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[4:28]","start":1637763595032,"end":1637763615292,"title":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[4:28] 11:19:55.032-11:20:15.292 Verificar o retorno com sucesso da API \/v1\/products?product_tags=Organic&product_type=lipstick com dados válidos de requisição (request)"},{"id":5,"group":5,"content":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[5:35]","start":1637763595031,"end":1637763615292,"title":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[5:35] 11:19:55.031-11:20:15.292 Verificar o retorno com sucesso da API \/v1\/products?product_tags=Organic&product_type=lipstick com dados inválidos de requisição (request)"},{"id":6,"group":2,"content":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[6:42]","start":1637763598466,"end":1637763615299,"title":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[6:42] 11:19:58.466-11:20:15.299 Verifica se o segundo lipstick tem a cor com nome Rosie","className":"failed"},{"id":7,"group":1,"content":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[7:49]","start":1637763614222,"end":1637763617589,"title":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[7:49] 11:20:14.222-11:20:17.589 Verificar o se o nome do Blush é uma string"},{"id":8,"group":4,"content":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[8:56]","start":1637763615594,"end":1637763619139,"title":"src\/test\/java\/aula_inatel\/testeAPIKarate\/makeup[8:56] 11:20:15.594-11:20:19.139 Tentar fazer um post e printar o tamanho","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
