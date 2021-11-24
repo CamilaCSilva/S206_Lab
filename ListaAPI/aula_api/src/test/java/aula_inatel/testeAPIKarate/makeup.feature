@@ -8,7 +8,7 @@ Background: Executar antes de cada teste
 Scenario: Verificar o retorno com sucesso da API /v1/products.json?product_tags=Organic&product_type=lipstick com dados válidos de requisição (request)
     Given url url_base
     Given path 'products.json?product_tags=Organic&product_type=lipstick'
-    When method get 
+    When method get  
     Then status 200
 
 Scenario: Verificar o retorno com sucesso da API /v1/products.json?product_tags=Organic&product_type=lipstick com dados inválidos de requisição (request)
