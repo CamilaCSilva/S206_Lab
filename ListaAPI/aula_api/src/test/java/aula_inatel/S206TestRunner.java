@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class S206TestRunner {
-  
+ 
     @Test
     void testParallel() {
         Results results = Runner.path("classpath:aula_inatel")
