@@ -1,0 +1,224 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 6,
+    "failures": -4,
+    "start": "2021-10-28T21:54:26.085Z",
+    "end": "2021-10-28T21:56:25.631Z",
+    "duration": 119546,
+    "testsRegistered": 7,
+    "passPercent": 0,
+    "pendingPercent": 85.71428571428571,
+    "other": 5,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9719da2f-7a90-413c-8135-0e3e4e641a50",
+      "title": "",
+      "fullFile": "cypress/integration/aula_inatel/globalqa.spec.js",
+      "file": "cypress/integration/aula_inatel/globalqa.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c316da3a-0505-46ee-aae6-fdb18efab431",
+          "title": "Cenario de Teste: Testar as funcoes de login do site globalsqa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Caso de teste: Registrar um usuario e receber mensagem",
+              "fullTitle": "Cenario de Teste: Testar as funcoes de login do site globalsqa Caso de teste: Registrar um usuario e receber mensagem",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "57ceac87-9abb-4596-85c0-f94b40317d38",
+              "parentUUID": "c316da3a-0505-46ee-aae6-fdb18efab431",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Falhar ao tentar redifinir senha com um e-mail não existente",
+              "fullTitle": "Cenario de Teste: Testar as funcoes de login do site globalsqa Caso de teste: Falhar ao tentar redifinir senha com um e-mail não existente",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "771e858f-83eb-4cf6-8397-2fe561cdbf3a",
+              "parentUUID": "c316da3a-0505-46ee-aae6-fdb18efab431",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Registrar sem colocar um username ou gerar um",
+              "fullTitle": "Cenario de Teste: Testar as funcoes de login do site globalsqa Caso de teste: Registrar sem colocar um username ou gerar um",
+              "timedOut": null,
+              "duration": 71104,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Registrar();\ncy.get('.sc-cQyDZe > .sc-dIUggk').click();\ncy.get('.sc-gDqNik').should('have.text', 'Este nome de usuário é muito curto, verifique se ele tem pelo menos 6 caracteres');",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://create.kahoot.it/__cypress/runner/cypress_runner.js:155054:72)\n    at https://create.kahoot.it/__cypress/runner/cypress_runner.js:156091:16\n    at tryCatcher (https://create.kahoot.it/__cypress/runner/cypress_runner.js:13212:23)\n    at https://create.kahoot.it/__cypress/runner/cypress_runner.js:8334:41\n    at tryCatcher (https://create.kahoot.it/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://create.kahoot.it/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://create.kahoot.it/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://create.kahoot.it/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://create.kahoot.it/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (https://create.kahoot.it/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (https://create.kahoot.it/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://create.kahoot.it/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (https://create.kahoot.it/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at Registrar (https://create.kahoot.it/__cypress/tests?p=cypress\\integration\\aula_inatel\\globalqa.spec.js:113:6)\n    at Context.eval (https://create.kahoot.it/__cypress/tests?p=cypress\\integration\\aula_inatel\\globalqa.spec.js:139:5)",
+                "diff": null
+              },
+              "uuid": "64aa5706-2144-4277-b015-06b4f0f54b3d",
+              "parentUUID": "c316da3a-0505-46ee-aae6-fdb18efab431",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Registrar um usuario com o mesmo usarname do anterior",
+              "fullTitle": "Cenario de Teste: Testar as funcoes de login do site globalsqa Caso de teste: Registrar um usuario com o mesmo usarname do anterior",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "8375039b-2ca2-4a8e-bfd8-19303999040b",
+              "parentUUID": "c316da3a-0505-46ee-aae6-fdb18efab431",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Fazer login com sucesso com um e-mail e senha corretos",
+              "fullTitle": "Cenario de Teste: Testar as funcoes de login do site globalsqa Caso de teste: Fazer login com sucesso com um e-mail e senha corretos",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "07c0273c-1c2d-4ee2-a0a2-caedfdaeed07",
+              "parentUUID": "c316da3a-0505-46ee-aae6-fdb18efab431",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Falha ao tentar fazer logar colocando o e-mail ou senha errado",
+              "fullTitle": "Cenario de Teste: Testar as funcoes de login do site globalsqa Caso de teste: Falha ao tentar fazer logar colocando o e-mail ou senha errado",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "4bd89b77-98b7-4feb-ba04-f0de2498684a",
+              "parentUUID": "c316da3a-0505-46ee-aae6-fdb18efab431",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Tentar logar sem a senha",
+              "fullTitle": "Cenario de Teste: Testar as funcoes de login do site globalsqa Caso de teste: Tentar logar sem a senha",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "ca936297-7c34-429f-b89e-1224a4fab5fa",
+              "parentUUID": "c316da3a-0505-46ee-aae6-fdb18efab431",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "64aa5706-2144-4277-b015-06b4f0f54b3d"
+          ],
+          "pending": [
+            "57ceac87-9abb-4596-85c0-f94b40317d38",
+            "771e858f-83eb-4cf6-8397-2fe561cdbf3a",
+            "8375039b-2ca2-4a8e-bfd8-19303999040b",
+            "07c0273c-1c2d-4ee2-a0a2-caedfdaeed07",
+            "4bd89b77-98b7-4feb-ba04-f0de2498684a",
+            "ca936297-7c34-429f-b89e-1224a4fab5fa"
+          ],
+          "skipped": [],
+          "duration": 71104,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
