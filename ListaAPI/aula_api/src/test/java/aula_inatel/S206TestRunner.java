@@ -16,4 +16,4 @@ class S206TestRunner {
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 
-}
+} 

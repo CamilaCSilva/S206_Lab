@@ -24,7 +24,7 @@ Scenario: Verificar o retorno com sucesso da API /v1/products?product_tags=Organ
     Then status 200
     And match response[0].name == "Lipstick"
     And match response[0].brand == "boosh"
-
+ 
 Scenario: Verificar o retorno com sucesso da API /v1/products?product_tags=Organic&product_type=lipstick com dados válidos de requisição (request)
     Given url url_base
     Given path 'products.json?product_tags=Organic&product_type=lipstick'
