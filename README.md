@@ -1,12 +1,18 @@
 LISTAS DE EXERCÍCIO S206
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-CYPRESS
+### CYPRESS
 Para executar o projeto na linha de comando deve utilizar a linha de código:
+```
 .node_modules/.bin/cypress run --spec 'cypress/integration/aula_inatel/**/'
+```
 
-Para gerar o relatório, deve-se usar: npm install --save-dev mochawesome mochawe
-some-merge mochawesome-report-generator.
-Além disso é preciso digitar :
+Para gerar o relatório, deve-se usar: 
+```
+npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator. 
+```
+
+Além disso é preciso digitar as linhas abaixo no arquivo cypress.json.
+```
 {
     "reporter": "mochawesome",
     "reporterOptions":{ 
@@ -15,12 +21,21 @@ Além disso é preciso digitar :
         "html": false,
         "json": true
     }
-} no arquivo cypress.json.
-Ápós fazer isso é só usar o comando pra executar o projeto, usar o comando 'npx mochawesome-merge "cypress/reports/*json" > mochawesome.json' e 'npx marge mochawesome.json' 
-para poder visualizar o relatório html na pasta reports dentro de integration.
+} 
+```
 
+Ápós fazer isso é só usar ox comandox abaixo para executar o projeto usar e poder visualizar o relatório html na pasta reports dentro de integration.
+
+```
+npx mochawesome-merge "cypress/reports/*json" > mochawesome.json
+```
+e 
+
+```
+npx marge mochawesome.json
+```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-KARATE 
+### KARATE 
 
 Para usar o karate é necessário baixar o Maven e, pode ser necessário colocar variáveis em "Editar as variáveis de ambiente do sistema".
 
